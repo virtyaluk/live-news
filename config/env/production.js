@@ -35,4 +35,27 @@ module.exports = {
   //   level: "silent"
   // }
 
+  session: {
+    host: process.env.REDIS_HOST,
+    port: process.env.REDIS_PORT,
+    pass: process.env.REDIS_PASS
+  },
+
+  sockets: {
+    host: process.env.REDIS_HOST,
+    port: process.env.REDIS_PORT,
+    pass: process.env.REDIS_PASS
+  },
+
+  connections: {
+    mongo: {
+      database: process.env.MONGO_DB || 'liveNewsDb',
+      host: process.env.MONGO_MASTER,
+      port: process.env.MONGO_PORT,
+      user: 'heroku',
+      password: process.env.MONGO_PASS,
+    }
+  },
+
+  hookTimeout: 30000
 };

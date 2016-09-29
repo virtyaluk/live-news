@@ -21,4 +21,11 @@ module.exports = {
   //   connection: 'someMongodbServer'
   // }
 
+  connections: {
+    mongo: {
+      database: 'liveNewsDb'
+    }
+  },
+
+  hookTimeout: 30000
 };

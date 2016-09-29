@@ -44,10 +44,10 @@ module.exports.sockets = {
   // -OR-
   //
 
-  // adapter: 'socket.io-redis',
+  adapter: 'socket.io-redis',
   // host: '127.0.0.1',
   // port: 6379,
-  // db: 0,
+  db: 0,
   // pass: '<redis auth password>',
 
 
@@ -136,6 +136,5 @@ module.exports.sockets = {
   * transport should be disabled.                                            *
   *                                                                          *
   ***************************************************************************/
-  // transports: ["polling", "websocket"]
-
+  transports: ["polling", "websocket"]
 };

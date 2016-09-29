@@ -1,0 +1,6 @@
+@charset 'UTF-8';
+@import 'variables';
+
+body {
+    border: 10px solid $body-border-color;
+}
